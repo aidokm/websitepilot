@@ -23,9 +23,9 @@
       <a class="close" data-dismiss="alert"> &times; </a>
     </div>
     </div>
-    @endif 
+    @endif
 
-            <div class="col-sm-12">{{-- 
+            <div class="col-sm-12">{{--
                 <p><strong>View All Categories</strong></p> --}}
                 <table class="table table-striped table-hover table-bordered">
                     <thead>

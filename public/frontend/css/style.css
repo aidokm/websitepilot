@@ -109,6 +109,9 @@ p {
     margin-top: 8px;
 	position: relative;
 	z-index: 2;
+    margin-left: -79.7px;
+    width: 240px;
+    height: 68px;
 }
 
 .res-nav_click {
@@ -169,29 +172,29 @@ p {
 }
 
 .navStyle ul li a:hover {
-    color: #df0031;
+    color: #0e0af7;
 }
 
 .navStyle > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
-    color: #df0031;
+    color: #0e0af7;
     background-color: transparent;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-    color: #df0031;
+    color: #0e0af7;
     background-color: transparent;
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-    color: #df0031;
+    color: #0e0af7;
     background-color: transparent;
 }
 
 .navStyle > li.active > a,
 .navStyle > li.active > a:hover {
     text-decoration: none;
-    color: #df0031;
+    color: #0e0af7;
     background-color: transparent;
 }
 
@@ -211,7 +214,7 @@ p {
 ---------------------------------*/
 
 .top_cont_outer {
-    background: #df0031;
+    background: #0e0af7;
     position: relative;
 }
 
@@ -259,7 +262,7 @@ p {
 
 .top_left_cont p {
     font-size: 16px;
-    color: #FFABAB;
+    color: #FFF;
     margin: 0 0 30px 0;
     line-height: 26px;
 }
@@ -285,7 +288,7 @@ a.read_more2 {
 
 a.read_more2:hover {
     background: #fff;
-    color: #df0031;
+    color: #0e0af7;
     border: 1px solid #fff;
 }
 
@@ -319,7 +322,7 @@ a.read_more2:hover {
 }
 
 .service_icon {
-    border: 2px solid #df0031;
+    border: 2px solid #0e0af7;
     border-radius: 50%;
     width: 90px;
     height: 90px;
@@ -327,11 +330,11 @@ a.read_more2:hover {
 }
 
 .service_icon.icon2 {
-    border: 2px solid #df0031;
+    border: 2px solid #0e0af7;
 }
 
 .service_icon.icon3 {
-    border: 2px solid #df0031;
+    border: 2px solid #0e0af7;
 }
 
 .service_icon span {
@@ -343,7 +346,7 @@ a.read_more2:hover {
 }
 
 .service_icon i {
-    color: #df0031;
+    color: #0e0af7;
     font-size: 40px;
     margin-top: 0;
     position: relative;
@@ -436,18 +439,18 @@ a.contact_btn {
     text-align: center;
     line-height: 49px;
     font-size: 16px;
-    color: #df0031;
+    color: #0e0af7;
     border-radius: 3px;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
-    border: 2px solid #df0031;
+    border: 2px solid #0e0af7;
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
 }
 
 a.contact_btn:hover {
-    background: #df0031;
+    background: #0e0af7;
     color: #fff;
 }
 
@@ -492,7 +495,7 @@ a.contact_btn:hover {
 }
 
 .Portfolio-nav li a:hover {
-    background: #df0031;
+    background: #0e0af7;
     color: #fff;
     text-decoration: none;
 }
@@ -522,7 +525,7 @@ a.contact_btn:hover {
 }
 
 .Portfolio-nav li a.current {
-    background: #df0031;
+    background: #0e0af7;
     color: #fff;
     text-decoration: none;
 }
@@ -612,7 +615,7 @@ img {
 
 
 .client_logos {
-    background: #df0031;
+    background: #0e0af7;
     padding: 60px 0;
     margin-top: 60px;
 }
@@ -692,7 +695,7 @@ img {
     display: block;
     width: 100%;
     height: 100%;
-    border-bottom: 4px solid #df0031;
+    border-bottom: 4px solid #0e0af7;
 }
 
 .team_box:hover .team_box_shadow {
@@ -796,7 +799,7 @@ img {
 }
 
 .contact_block_icon.icon2 {
-    border-color: #df0031;
+    border-color: #0e0af7;
 }
 
 .contact_block_icon.icon3 {
@@ -813,11 +816,11 @@ img {
 }
 
 .contact_block_icon.icon2 {
-    border-color: #df0031;
+    border-color: #0e0af7;
 }
 
 .contact_block_icon.icon2 span {
-    background: #df0031;
+    background: #0e0af7;
 }
 
 .contact_block_icon.icon3 {
@@ -955,7 +958,7 @@ img {
     width: 175px;
     height: 50px;
     letter-spacing: 0px;
-    background: #df0031;
+    background: #0e0af7;
     border-radius: 3px;
     color: #ffffff;
     font-size: 16px;
@@ -993,7 +996,7 @@ img {
 
 .footer_bottom span a {
     display: inline-block;
-    color: #df0031;
+    color: #0e0af7;
     font-size: 16px;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -1113,9 +1116,9 @@ img {
 
 #filters ul li a:hover h5, #filters ul li a.active h5 {
     background: #fff;
-    color: #df0031;
+    color: #0e0af7;
     text-decoration: none;
-    border: #df0031 solid 1px;
+    border: #0e0af7 solid 1px;
 }
 
 .section-title h2 {
@@ -1170,10 +1173,10 @@ img {
     position: relative;
 }
 
-.portfolio-item .portfolio_img img {
+/* .portfolio-item .portfolio_img img {
     width: 100%;
     height: auto;
-}
+} */
 
 .portfolio-item:hover .item_overlay {
     opacity: 1;
@@ -1684,7 +1687,7 @@ font-size: 30px;
 padding: 60px 0 50px;
 } 
 .navbar-inverse .navbar-toggle .icon-bar{
-background:#df0031;
+background:#0e0af7;
 }
 .navbar-inverse .navbar-toggle {
 border-color: transparent;
@@ -1714,3 +1717,74 @@ background: #F9F9F9;
 width: 99%;
 }
 }
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }

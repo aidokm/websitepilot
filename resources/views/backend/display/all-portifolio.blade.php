@@ -34,15 +34,15 @@
                           <a href="{{url('deletePc')}}/{{$portifolio->id}}" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
                       </td>
                   </tr>
-                  @endforeach 
+                  @endforeach
                   @else
-                  
-                 
+
+
                   <tr>
                     <td colspan="4">No Portifolios Found.</td>
                   </tr>
                   @endif
-                    
+
                 </tbody>
             </table>
         </div>

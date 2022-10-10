@@ -24,7 +24,7 @@
       <a class="close" data-dismiss="alert"> &times; </a>
     </div>
     </div>
-    @endif 
+    @endif
 
 <form action="{{url('updatePortifolio')}}/{{$maindata->id}}" method="post" enctype="multipart/form-data">
     {{csrf_field() }}
@@ -39,7 +39,7 @@
                 <p> <input type="file"  accept="image/*" name="image" id="file" onchange="loadfile(event)"
                  style="display:none;"></p>
                  <p> <label for="file" style="cursor:pointer;">Featured Image</label></p>
-               
+
                  </div>
                  @if ($maindata->image)
                 <p><img id="output" src="{{url('public/portifolios')}}/{{$maindata->image}}"></p>
@@ -53,10 +53,10 @@
                     <option>{{$maindata->category}}</option>
                    @foreach ($portifolios as $portifolio)
                    @if($portifolio->title != $maindata->category)
-                    <option>{{$portifolio->title}}</option> 
+                    <option>{{$portifolio->title}}</option>
                     @endif
                    @endforeach
-                      
+
                   </select>
                   </div>
                   <div class="form-group">

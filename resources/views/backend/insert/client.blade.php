@@ -23,7 +23,7 @@
       <a class="close" data-dismiss="alert"> &times; </a>
     </div>
     </div>
-    @endif 
+    @endif
 
   <form action="{{url('addClient')}}" method="post" enctype="multipart/form-data">
     {{csrf_field() }}

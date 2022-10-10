@@ -102,3 +102,6 @@ Route::get('editMember/{id}','AdminController@editMember');
 Route::post('updateMember/{id}','CrudController@updateData');
 
 Route::get('deleteMember/{id}','AdminController@deleteMember');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

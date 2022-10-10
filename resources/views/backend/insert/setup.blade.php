@@ -23,7 +23,7 @@
       <a class="close" data-dismiss="alert"> &times; </a>
     </div>
     </div>
-    @endif 
+    @endif
 
     @if($data=='')
     <div class="col-sm-6"></div>
@@ -61,10 +61,12 @@
                 <label for="">Social Profile links</label>
             </div>
             <div id="socialGroup">
+              @foreach($socials as $social)
                 <div class="form-group socialField">
-                    <input type="text" name="social[]" class="form-control">
+                    <input type="text" name="social[]" value="{{$social}}" class="form-control">
                     <a href="#" class="btn btn-warning addField"><i class="fa fa-plus"></i></a>
                 </div>
+              @endforeach
             </div>
             <div class="form-group">
                 <button class="btn btn-success">Add settings</button>
@@ -78,8 +80,8 @@
         image.src = URL.createObjectURL(event.target.files[0]);
     };
     $('.addField').click(function(){
-        var newField = $(document.createElement('div')).attr('class','form-group');
-        newField.after().html('<input type="text" name="social[]" class="form-control"></div>');
+        let newField = $(document.createElement('div')).attr('class','form-group');
+        newField.after().html('<label for="">Social Profile links</label><input type="text" name="social[]" class="form-control"></div>');
         newField.appendTo('#socialGroup');
     })
 </script>

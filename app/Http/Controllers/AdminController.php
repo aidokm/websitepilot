@@ -11,7 +11,9 @@ class AdminController extends Controller
 {
     public function __construct()
     {
-        
+
+            $this->middleware('auth')->except(['sendMessage']);
+
     }
 
     public function admin(){
@@ -20,8 +22,13 @@ class AdminController extends Controller
 
     public function setups(){
         $data = DB::table('setups')->first();
+        if(!empty($data)){
+            $socials = explode(',',$data->social);
+        }else{
+            $socials = [];
+        }
 
-        return view('backend.insert.setup',['data' =>$data]);
+        return view('backend.insert.setup',['data' =>$data, 'socials' => $socials]);
     }
 
     public function categories(){
@@ -33,13 +40,13 @@ class AdminController extends Controller
         $data = DB::table('categories')->get();
         $maindata = DB::table('categories')->where('id',$id)->first();
 
-        return view('backend.edit.category',['maindata'=>$maindata,'data' =>$data]); 
+        return view('backend.edit.category',['maindata'=>$maindata,'data' =>$data]);
     }
 
     public function deleteCategory($id){
         $data = DB::table('categories')->where('id',$id)->delete();
 
-        return redirect()->back()->with('message', 'Data deleted successfully'); 
+        return redirect()->back()->with('message', 'Data deleted successfully');
     }
 
     public function newPost(){
@@ -63,7 +70,7 @@ class AdminController extends Controller
     public function deletePost($id){
         $data = DB::table('contents')->where('id',$id)->delete();
 
-        return redirect()->back()->with('message', 'Data deleted successfully'); 
+        return redirect()->back()->with('message', 'Data deleted successfully');
     }
 
     public function newService(){
@@ -75,7 +82,7 @@ class AdminController extends Controller
         $data = DB::table('services')->where('status','on')->get();
         return view('backend.display.allService',['data'=>$data]);
     }
-    
+
     public function editService($id){
         $data = DB::table('services')->where('id',$id)->first();
         return view('backend.edit.editService',['data'=>$data]);
@@ -118,13 +125,13 @@ class AdminController extends Controller
         $portifolios = DB::table('portcats')->where('status','on')->get();
         $maindata = DB::table('portifolios')->where('id',$id)->first();
 
-        return view('backend.edit.editPortifolio',['maindata'=>$maindata,'portifolios' =>$portifolios]); 
+        return view('backend.edit.editPortifolio',['maindata'=>$maindata,'portifolios' =>$portifolios]);
     }
 
     public function deletePc($id){
         $data = DB::table('portifolios')->where('id',$id)->delete();
 
-        return redirect()->back()->with('message', 'Data deleted successfully'); 
+        return redirect()->back()->with('message', 'Data deleted successfully');
     }
 
     public function clients(){
@@ -140,11 +147,11 @@ class AdminController extends Controller
     public function deleteClient($id){
         $data = DB::table('clients')->where('id',$id)->delete();
 
-        return redirect()->back()->with('message', 'Data deleted successfully'); 
+        return redirect()->back()->with('message', 'Data deleted successfully');
     }
 
     public function newMember(){
-        return view('backend.insert.team'); 
+        return view('backend.insert.team');
     }
 
     public function allMembers(){
